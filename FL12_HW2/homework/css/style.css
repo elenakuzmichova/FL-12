@@ -1,0 +1,245 @@
+@media print {
+    .tm-sidebar, 
+    .tm-team-img, 
+    #about,
+    .tm-content-box ul,
+    .tm-content-box:nth-of-type(5) {
+        display:none;
+        }
+
+    .carousel {
+        padding: 25px 0 0;
+        }
+    .tm-main-content, 
+    .padding-medium,
+    .carousel {
+        padding: 0;
+    }
+    .tm-banner {
+        padding: 20px 30px;
+    }
+    .blocks .tm-section-description:last-of-type {
+        font-style: italic;
+        word-spacing: 15px;
+        letter-spacing: 5px;
+    }
+    .tm-section-title {
+        text-transform: uppercase;
+    }
+
+    .tm-content-box {
+        margin-bottom: 13px;
+    }
+
+    .tm-team-description-container {
+        margin: 0 auto;
+        text-align: center;
+        max-width: none;
+        padding: 0 35px;
+    }
+    .blocks .tm-team-description-container {
+        padding: 0 45px;
+    }
+
+    .carousel-content {
+        padding: 0 40px;
+    }
+    .heading h2 {
+        color: lightskyblue;
+        font-weight: 300;
+        text-align: center;
+    }
+    .heading ol {
+        list-style: none;
+        width: 400px;
+        margin: 0 auto;
+    }
+    .heading li:nth-child(odd) {
+        text-align: right;
+        margin-right: 40px;
+    }
+    .heading li:nth-child(even) {
+        text-align: left;
+    }
+
+    
+
+    #tmCarousel .carousel-indicators {
+        display: none;
+    }
+    
+    
+}
+
+@media screen {
+.tm-nav-item a:hover {
+    background-color: lightskyblue;
+    color: #fff; 
+}
+.tm-content-header {
+    background: linear-gradient(to right, lightskyblue, burlywood );
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+}
+.tm-banner-inner {
+    background: white;
+}
+
+.tm-banner-inner p {
+    animation-name: banner-animation;
+    animation-duration: 5s;
+    text-shadow: 5px 5px 2px #333;
+}
+
+@keyframes banner-animation {
+    from {
+        transform: translate(200px, 0);
+    }
+    to {
+        transform: translate(0,0);
+    }
+}
+
+.tm-team-description-container {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+}
+.tm-content-box .tm-team-description-container {
+    width: 290px;
+    float: left;
+    text-indent: 25px;
+    margin-left: 40px;
+    margin-top: 220px;
+}
+
+.tm-content-box .tm-team-description-container h2 {
+    margin-left: 25px;
+}
+.tm-team-img img {
+    float: right;
+    display: inline;
+}
+#about .box:hover h2{
+    background-color: lightgrey;
+    color: lightskyblue;  
+    font-style: italic;  
+}
+
+.heading h2 {
+    color: lightskyblue;
+    text-align: center;
+}
+
+.heading li{
+    list-style: lower-alpha;
+}
+
+.heading li:hover::before {
+    content: ">"
+}
+
+a.text::after {
+    content: "New";
+    color: red;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: super;
+    font-size: 10px;
+}
+
+.blocks .tm-team-description-container p {
+    text-indent: 25px;
+    width: 450px;
+    margin-left: 40px;
+}
+.blocks .tm-team-description-container h2 {
+    margin-left: 40px;
+    text-align: left;
+}
+.blocks .tm-team-description-container p:nth-of-type(2) {
+    font-style: italic;
+    word-spacing: 10px;
+    letter-spacing: 5px;
+}
+
+.blocks {
+    display: flex;
+    flex-direction: column;
+}
+.blocks div:nth-of-type(2) {
+    display: none;
+}
+.blocks .tm-team-description-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.blocks .tm-content-box:last-of-type {
+    margin: 0;
+}
+
+#ideas {
+    margin-top: 30px;
+}
+
+.tm-content-box .box-work:nth-child(odd){
+    background: lightskyblue;
+    color: white;
+}
+
+.tm-content-box .box-work div p {
+    font-style: italic;
+}
+.tm-content-box .box-work div p:first-letter {
+    font-weight: bold;
+}
+
+.tm-section-description {
+    text-indent: 25px;
+    line-height: 30px;
+}
+
+.tm-content-box .box-work {
+    padding: 10px;
+}
+
+.contact-form input {
+    border: none;
+    border-bottom: 1px solid lightskyblue;
+}
+.contact-form textarea {
+    border: 1px solid lightskyblue;
+    background-image: url(../img/email-icon.png);
+    background-repeat: no-repeat;
+    background-position-x: 990px;
+    background-position-y: 190px;
+    background-size: 30px;
+}
+.contact-form button {
+    background: white;
+    color: lightskyblue;
+    border: 1px solid lightskyblue;
+    float: right;
+    padding: 20px 30px;
+}
+
+section {
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+}
+section::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 40px 40px 0 0;
+    border-color: lightskyblue transparent transparent transparent;
+}
+
+.container {
+    position: relative;
+}
+.tm-main-nav {
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+}
+}
