@@ -207,6 +207,10 @@ a.text::after {
     border: none;
     border-bottom: 1px solid lightskyblue;
 }
+
+.contact-form input:focus {
+    background-color: lightskyblue;
+}
 .contact-form textarea {
     border: 1px solid lightskyblue;
     background-image: url(../img/email-icon.png);
