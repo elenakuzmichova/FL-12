@@ -1,4 +1,4 @@
-function Fighter({name, damage, hp, strength, agility}) {
+function Fighter({name, damage, strength, agility, hp}) {
     let totalHealth = hp;
     let winsNumber = 0;
     let lossesNumber = 0;
